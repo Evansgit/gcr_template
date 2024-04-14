@@ -29,7 +29,7 @@ api_key = os.getenv("GOOGLE_API_KEY")
 
 # If API key is not set in environment variables, use the default value from constants
 if not api_key:
-    api_key = "AIzaSyCmT0QZxBc83s9HOR952UNBlcJTIaIJdN4"  # Replace with your actual API key
+    api_key = ""  # Replace with your actual API key
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro", api_key=api_key, convert_system_message_to_human=True)
 
